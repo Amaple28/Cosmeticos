@@ -1,0 +1,74 @@
+/*PALETA DE CORES
+ROXO ESCURO #431369
+ROXO CLARO #9C3DEB
+AMARELO #EBB154
+VERDE ESCURO #219E51
+VERDE CLARO #26EB71 */
+
+
+/*RESET*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: arial, verdana, helvetica;
+    box-sizing: border-box;
+}
+
+
+/* TIPO DE ROLAGEM*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*SECTION- CAPA*/
+
+.img_total {
+    background-image: url(img/capa.png);
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.seta {
+    width: 50px;
+    transition: 0.4s;
+}
+
+.seta:hover {
+    transform: translate(20px);
+}
+
+.img_total h1 {
+    font-size: 38px;
+    margin-bottom: 15px;
+    color: #219E51;
+    margin-top: 80px;
+}
+
+.img_total h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: #219E51;
+}
+
+
+/*BREAKPOINT*/
+
+@media (max-width: 700px) {
+    .img_total h3 {
+        color: #219E51;
+        font-size: 18px;
+    }
+    .img_total h1 {
+        color: #219E51;
+        margin-top: 170px;
+    }
+}

@@ -1,0 +1,319 @@
+/*PALETA DE CORES
+ROXO ESCURO #431369
+ROXO CLARO #9C3DEB
+AMARELO #EBB154
+VERDE ESCURO #219E51
+VERDE CLARO #26EB71 */
+
+
+/*RESET-LIMPANDO MINHA PÁGINA*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-family: arial, verdana, helvetica;
+    box-sizing: border-box;
+}
+
+
+/*MUDAR TIPO DE ROLAGEM (SCROLL DO NAVEGADOR - DESLIZAR)*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+.b1 {
+    background-color: #431369;
+    padding-bottom: 20px;
+}
+
+
+/*titulo*/
+
+h1 {
+    font-size: 28px;
+    color: black;
+    text-align: center;
+}
+
+
+/*textos*/
+
+.text {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+
+/*NAV*/
+
+.logo {
+    width: 35px;
+    margin-right: 10px;
+}
+
+
+/*Slide Show*/
+
+.slds {
+    color: black;
+}
+
+
+/*Historia*/
+
+.hist {
+    display: flex;
+    align-items: center;
+}
+
+.imghist {
+    width: 300px;
+}
+
+
+/*QUEBRA DE PONTO (BREAKPOINT)*/
+
+@media (max-width: 700px) {
+    .imghist {
+        width: 500px;
+    }
+    .hist .text {
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+
+/*modal*/
+
+.at {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/*Curiosidades*/
+
+.curiosidade {
+    display: flex;
+    padding: 50px;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.accordion {
+    width: 600px;
+}
+
+.carousel1 {
+    width: 400px;
+}
+
+
+/*produtos*/
+
+.produto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parent {
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: .3rem;
+    box-shadow: 0px 0px 4px 1px #00000057;
+}
+
+.child {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    /* fallback color */
+    background-position: center;
+    background-size: cover;
+    transition: all .5s;
+}
+
+.parent:hover .child,
+.parent:focus .child {
+    transform: scale(1.1);
+}
+
+.child::before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.parent:hover .child:before,
+.parent:focus .child:before {
+    display: block;
+}
+
+.fto-01 {
+    background-image: url("./img/produto01.jpeg");
+}
+
+.fto-02 {
+    background-image: url("./img/produto02.jpeg");
+}
+
+.fto-03 {
+    background-image: url("./img/produto03.jpeg");
+}
+
+.fto-04 {
+    background-image: url("./img/produto04.jpeg");
+}
+
+.fto-05 {
+    background-image: url("./img/produto05.jpeg");
+}
+
+.fto-06 {
+    background-image: url("./img/produto06.jpeg");
+}
+
+.fto-07 {
+    background-image: url("./img/produto07.jpeg");
+}
+
+.fto-08 {
+    background-image: url("./img/cosmeticos4.jpg");
+}
+
+.fto-09 {
+    background-image: url("./img/cosmeticos3.jpg");
+}
+
+.fto-10 {
+    background-image: url("./img/cosmeticos1.jpg");
+}
+
+.fto-11 {
+    background-image: url("./img/cosmeticos7.jpg");
+}
+
+.fto-12 {
+    background-image: url("./img/cosmeticos9.jpg");
+}
+
+.fto-13 {
+    background-image: url("./img/modelo4.jpg");
+}
+
+.fto-14 {
+    background-image: url("./img/modelo1.jpg");
+}
+
+.fto-15 {
+    background-image: url("./img/modelo3.jpg");
+}
+
+.images-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.product section h1 {
+    color: white;
+    /* margin-top: 6rem; */
+    margin-bottom: 6rem;
+}
+
+.product {
+    background-color: #502275;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+@media (max-width: 700px) {
+    .produto {
+        display: block;
+        align-items: center;
+    }
+}
+
+
+/*impactos ambientais*/
+
+.cardapio {
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div_cardapio {
+    background-color: #219E51;
+    margin-top: 42px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.div_cardapio .div_item {
+    padding: 30px;
+    width: 30%;
+    min-width: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div_item h1 {
+    color: white;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+.div_item p {
+    color: #ffffff;
+    font-size: 18px;
+    margin: 10px;
+}
+
+@media (max-width: 700px) {
+    .cardapio h1 {
+        font-size: 30px;
+    }
+    .cardapio p {
+        text-align: center;
+        margin: 30px 30px;
+        font-size: 20px;
+    }
+    .div_cardapio .div_item {
+        padding: 20px;
+        width: 90%;
+    }
+    .div_item p {
+        margin-bottom: 70px;
+    }
+}
+
+
+/*Mercado de trabalho*/
+
+.mercado .text {
+    width: 100%;
+    padding: 0 20px;
+}
