@@ -3,18 +3,7 @@ ROXO ESCURO #431369
 ROXO CLARO #9C3DEB
 AMARELO #EBB154
 VERDE ESCURO #219E51
-VERDE CLARO #26EB71 */
-
-
-/*RESET-LIMPANDO MINHA PÁGINA*/
-
-* {
-    margin: 0;
-    padding: 0;
-    font-size: 18px;
-    font-family: arial, verdana, helvetica;
-    box-sizing: border-box;
-}
+VERDE CLARO #26EB71 */ 
 
 
 /*MUDAR TIPO DE ROLAGEM (SCROLL DO NAVEGADOR - DESLIZAR)*/
@@ -48,6 +37,12 @@ h1 {
     padding-right: 200px;
 }
 
+@media (max-width:820px) {
+    .text{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
 
 /*NAV*/
 
